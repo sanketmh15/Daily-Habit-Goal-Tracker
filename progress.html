@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Progress | Daily Habit & Goal Tracker</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Daily Habits & Goal Tracker</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="habits.html">Habits</a>
+            <a href="goals.html">Goals</a>
+            <a href="progress.html">Progress</a>
+            <a href="add-habit.html">Add Habit</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Habit Progress -->
+
+        <section>
+
+            <h2>Habit Progress</h2>
+
+            <div class="stats-container">
+
+                <div class="stat-card">
+                    <h3>Total Habits</h3>
+                    <p id="totalHabits">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Completed Habits</h3>
+                    <p id="completedHabits">0</p>
+                </div>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    id="habitProgressFill"
+                    class="progress-fill">
+                </div>
+
+            </div>
+
+            <p
+                id="habitProgressText"
+                class="progress-text">
+                0% Completed
+            </p>
+
+        </section>
+
+
+        <!-- Goal Progress -->
+
+        <section>
+
+            <h2>Goal Progress</h2>
+
+            <div class="stats-container">
+
+                <div class="stat-card">
+                    <h3>Total Goals</h3>
+                    <p id="totalGoals">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Completed Goals</h3>
+                    <p id="completedGoals">0</p>
+                </div>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    id="goalProgressFill"
+                    class="progress-fill">
+                </div>
+
+            </div>
+
+            <p
+                id="goalProgressText"
+                class="progress-text">
+                0% Completed
+            </p>
+
+        </section>
+
+
+        <!-- Overall Progress -->
+
+        <section>
+
+            <h2>Overall Progress</h2>
+
+            <p id="overallProgressText">
+                0% Completed
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Daily Habits & Goal Tracker
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

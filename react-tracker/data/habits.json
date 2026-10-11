@@ -1,0 +1,29 @@
+{
+    "habits": [
+        {
+            "id": 101,
+            "name": "Morning Exercise",
+            "description": "Exercise for 30 minutes"
+        },
+        {
+            "id": 102,
+            "name": "Read Book",
+            "description": "Read for 20 minutes"
+        },
+        {
+            "id": 103,
+            "name": "Drink Water",
+            "description": "Drink enough water"
+        },
+        {
+            "id": 104,
+            "name": "Meditation",
+            "description": "Meditate for 10 minutes"
+        },
+        {
+            "id": 105,
+            "name": "Study",
+            "description": "Study for 2 hours"
+        }
+    ]
+}
