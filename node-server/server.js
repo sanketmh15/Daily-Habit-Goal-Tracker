@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 
 const cors = require("cors");
@@ -8,10 +9,10 @@ const pageRoutes = require("./routes/pages");
 
 const apiRoutes = require("./routes/api");
 
-
+const authRoutes = require("./routes/auth");
 const app = express();
 
-const PORT = 3000;
+const PORT = Number(process.env.PORT || 3000);
 
 
 // =========================
@@ -56,24 +57,34 @@ app.use(
 // =========================
 // REST API ROUTES
 // =========================
-
-app.use(
-    "/api",
-    apiRoutes
-);
-
+app.use("/api/auth", authRoutes);
+app.use("/api", apiRoutes);
 
 // =========================
 // START SERVER
 // =========================
 
-app.listen(
+const server = app.listen(
     PORT,
     function () {
 
         console.log(
             `Node.js server running at http://localhost:${PORT}`
         );
+
+    }
+);
+
+server.on(
+    "error",
+    function (error) {
+
+        console.error(
+            `Unable to start the server on port ${PORT}:`,
+            error.message
+        );
+
+        process.exit(1);
 
     }
 );
